@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	span {
+		color:red;
+	}
+</style>
+</head>
+<body>
+	<h1>연산 요청 결과</h1>
+	<hr>
+	결과 : <span th:text=" ${data}" ></span><br><br>
+	결과 : <span>[[${data}]]</span><br><hr>
+	<a th:href='${ #request.getHeader("referer") }'>입력화면</a>
+</body>
+</html>

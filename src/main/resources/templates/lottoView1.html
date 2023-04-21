@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>로또 결과</h1>
+<hr>
+<h2 style="color:red" th:text="${ lottoVO.result }"></h2>
+<hr>
+<a th:href='${ #request.getHeader("referer") }'>재시도....</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
